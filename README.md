@@ -83,7 +83,7 @@ $ Remove-Migration -f
 
 
 ## Deployment
-ในส่วนของการ Deployment Source Code ไปที่เครื่อง Server ต่างๆ สามารถเลือกคำสั่งในการ Deploy จากด้านล่างได้เลยโดย Source Code จะอยู่ที่ Directory: pea3.webservice/bin/Release/net6.0/Publish ให้นักพัฒนา Copy ไฟล์ทั้งหมดภายใน Folder Publish ไปวางบน Server โดยก่อนวางไฟล์ให้ทำการ Stop App Pool "pea3.webservice" ก่อนทุกครั้ง เมื่อทับเสร็จให้ทำการ Start กลับมา
+ในส่วนของการ Deployment Source Code ไปที่เครื่อง Server ต่างๆ สามารถเลือกคำสั่งในการ Deploy จากด้านล่างได้เลยโดย Source Code จะอยู่ที่ Directory: PI.Quiz/bin/Release/net6.0/Publish ให้นักพัฒนา Copy ไฟล์ทั้งหมดภายใน Folder Publish ไปวางบน Server โดยก่อนวางไฟล์ให้ทำการ Stop App Pool "pi.quiz.webservice" ก่อนทุกครั้ง เมื่อทับเสร็จให้ทำการ Start กลับมา
 ```cmd
 P1 > dotnet publish
 P2 > dotnet publish --configuration Release /p:EnvironmentName=Development
