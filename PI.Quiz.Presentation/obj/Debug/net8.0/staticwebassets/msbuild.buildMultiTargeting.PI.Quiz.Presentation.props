@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PI.Quiz.Presentation.props" />
+</Project>

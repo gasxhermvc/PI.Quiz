@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "41dc162a-1aa3-4f52-a12b-45aa24c18c7b",
+		"name": "PI.Quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6682602"
+	},
+	"item": [
+		{
+			"name": "CSRF",
+			"item": [
+				{
+					"name": "generator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/csrf/generator",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"csrf",
+								"generator"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authen",
+			"item": [
+				{
+					"name": "token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = pm.response.json()\r",
+									"pm.environment.set('access_token', response.accessToken)\r",
+									"pm.environment.set('refresh_token', response.refreshToken)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grantType",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "admin@pi.financial",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Aa654321$!",
+									"type": "text"
+								},
+								{
+									"key": "clientId",
+									"value": "696b4176abb7d23",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/token",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var response = pm.response.json()\r",
+									"pm.environment.set('access_token', response.accessToken)\r",
+									"pm.environment.set('refresh_token', response.refreshToken)"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grantType",
+									"value": "refresh_token",
+									"type": "text"
+								},
+								{
+									"key": "clientId",
+									"value": "696b4176abb7d23",
+									"type": "text"
+								},
+								{
+									"key": "refreshToken",
+									"value": "{{refresh_token}}",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/token",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-info",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/auth/user-info",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"user-info"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "revoke",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/revoke",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"revoke"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "X-CSRF-TOKEN",
+								"value": "CfDJ8OGA3mM8Sz1Clp4TjKSHqCuSj7bS0mM-CtdLEzBGOFXy3PMNLPwIMSPpnOR_Wl71YSzbvxT0aRF-XuvPESzrsZlfu-ShOiCXPasuaOo9GrHbt7zd1kiCO9PZkoqlky5C5xAJqDAxorEZ7lT28zff9AA",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@pi.financial",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Aa123456$!",
+									"type": "text"
+								},
+								{
+									"key": "firstName",
+									"value": "Thanatmet",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Thanarattanan",
+									"type": "text"
+								},
+								{
+									"key": "nickName",
+									"value": "Billy",
+									"type": "text"
+								},
+								{
+									"key": "birthDate",
+									"value": "1992-07-04",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "0904990500",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/account/register",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot-password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "admin@pi.financial",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/account/forgot-password",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"account",
+								"forgot-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "reset-password",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "newPassword",
+									"value": "Aa654321$!",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/api/account/reset-password/eyJpdiI6IldJR0Y5S2hQWGdPTDd5Z0w4QTgyMEE9PSIsInZhbHVlIjoiUmY2L2VYMjJ3SWFpdFpwTkRpbkx5d2ZoWHpZcnVIWlZHN1Z1bzNFeU1OSC8yay8wYzlzTm5IWUZqcTRKQ1plTmlabU02QzAyQS9kd2ovZnlxS0JLQ21YVVBHRWs4aDdXUklheGxLU3F3bjd6bWROR2VuV0Q1NHYwNVlJQmUwUGNjcTZ1amplS1N0SUpOeVUvOW5QVzZETjJxSjVFMTVmSkp1a3c2Ym1YWkIxbVhuSEFub01wbXhIS1hvUlV1UzhwMmlPN1hvYkQraWZ1QUpiejIzTU91Zz09IiwibWFjIjoiNjVjNGIzZjIwMmNkNjY5ZWM2NTc2MGJmNWE4NzIxNWI0OWQ1MTYwZTllNzE3MTAzZTJlZmNkNTE4ZTUwMjUwMiJ9",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"account",
+								"reset-password",
+								"eyJpdiI6IldJR0Y5S2hQWGdPTDd5Z0w4QTgyMEE9PSIsInZhbHVlIjoiUmY2L2VYMjJ3SWFpdFpwTkRpbkx5d2ZoWHpZcnVIWlZHN1Z1bzNFeU1OSC8yay8wYzlzTm5IWUZqcTRKQ1plTmlabU02QzAyQS9kd2ovZnlxS0JLQ21YVVBHRWs4aDdXUklheGxLU3F3bjd6bWROR2VuV0Q1NHYwNVlJQmUwUGNjcTZ1amplS1N0SUpOeVUvOW5QVzZETjJxSjVFMTVmSkp1a3c2Ym1YWkIxbVhuSEFub01wbXhIS1hvUlV1UzhwMmlPN1hvYkQraWZ1QUpiejIzTU91Zz09IiwibWFjIjoiNjVjNGIzZjIwMmNkNjY5ZWM2NTc2MGJmNWE4NzIxNWI0OWQ1MTYwZTllNzE3MTAzZTJlZmNkNTE4ZTUwMjUwMiJ9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "UM",
+			"item": [
+				{
+					"name": "lists",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/api/um/list?keyword=admin",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"um",
+								"list"
+							],
+							"query": [
+								{
+									"key": "keyword",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Thanatmet\",\r\n    \"lastName\": \"Thanarattanan\",\r\n    \"nickName\": \"Billy\",\r\n    \"birthDate\": \"1992-07-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/um/{id}/update",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"um",
+								"{id}",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Thanatmet\",\r\n    \"lastName\": \"Thanarattanan\",\r\n    \"nickName\": \"Billy\",\r\n    \"birthDate\": \"1992-07-04\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/api/um/admin@pi.financial/delete",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"um",
+								"admin@pi.financial",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "access_token",
+			"value": ""
+		}
+	]
+}

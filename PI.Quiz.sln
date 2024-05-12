@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.Presentation", "PI.Quiz.Presentation\PI.Quiz.Presentation.csproj", "{2AAB6BF6-1531-46CB-A7ED-03498A3A79D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F} = {3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD} = {9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}
+		{B99F2E95-F3FF-44DA-941C-21AC958F88DE} = {B99F2E95-F3FF-44DA-941C-21AC958F88DE}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.DAL", "PI.Quiz.DAL\PI.Quiz.DAL.csproj", "{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F} = {3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.Bussiness", "PI.Quiz.Bussiness\PI.Quiz.Bussiness.csproj", "{B99F2E95-F3FF-44DA-941C-21AC958F88DE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD} = {9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.Engine", "PI.Quiz.Engine\PI.Quiz.Engine.csproj", "{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F9043B4-8EF2-4392-A830-F1C6CC26B307}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI.Quiz.UnitTest", "PI.Quiz.UnitTest\PI.Quiz.UnitTest.csproj", "{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F} = {3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AAB6BF6-1531-46CB-A7ED-03498A3A79D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAB6BF6-1531-46CB-A7ED-03498A3A79D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAB6BF6-1531-46CB-A7ED-03498A3A79D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAB6BF6-1531-46CB-A7ED-03498A3A79D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E4F0323-2885-4528-9DC2-2EAF8CCD05CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99F2E95-F3FF-44DA-941C-21AC958F88DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99F2E95-F3FF-44DA-941C-21AC958F88DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99F2E95-F3FF-44DA-941C-21AC958F88DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99F2E95-F3FF-44DA-941C-21AC958F88DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F743D0C-7FF8-44D1-844B-4BB4FC9A02F1}
+	EndGlobalSection
+EndGlobal
