@@ -112,3 +112,4 @@ C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.UnitTest\obj\Debug\net8.0\PI.Quiz.U
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.UnitTest\obj\Debug\net8.0\PI.Quiz.UnitTest.genruntimeconfig.cache
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.UnitTest\obj\Debug\net8.0\ref\PI.Quiz.UnitTest.dll
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.UnitTest\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.UnitTest\obj\Debug\net8.0\PI.Quiz.UnitTest.sourcelink.json

@@ -36,3 +36,4 @@ C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Bussiness\obj\Debug\net8.0\refint\P
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Bussiness\obj\Debug\net8.0\PI.Quiz.Bussiness.pdb
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Bussiness\obj\Debug\net8.0\PI.Quiz.Bussiness.genruntimeconfig.cache
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Bussiness\obj\Debug\net8.0\ref\PI.Quiz.Bussiness.dll
+C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Bussiness\obj\Debug\net8.0\PI.Quiz.Bussiness.sourcelink.json

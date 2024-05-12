@@ -10,3 +10,4 @@ C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Engine\obj\Debug\net8.0\PI.Quiz.Eng
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Engine\obj\Debug\net8.0\refint\PI.Quiz.Engine.dll
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Engine\obj\Debug\net8.0\PI.Quiz.Engine.pdb
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Engine\obj\Debug\net8.0\ref\PI.Quiz.Engine.dll
+C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Engine\obj\Debug\net8.0\PI.Quiz.Engine.sourcelink.json

@@ -92,6 +92,39 @@
 					"response": []
 				},
 				{
+					"name": "revoke",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{access_token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{url}}/api/auth/revoke",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"revoke"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "refresh-token",
 					"event": [
 						{
@@ -182,39 +215,6 @@
 						}
 					},
 					"response": []
-				},
-				{
-					"name": "revoke",
-					"request": {
-						"auth": {
-							"type": "bearer",
-							"bearer": [
-								{
-									"key": "token",
-									"value": "{{access_token}}",
-									"type": "string"
-								}
-							]
-						},
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "urlencoded",
-							"urlencoded": []
-						},
-						"url": {
-							"raw": "{{url}}/api/auth/revoke",
-							"host": [
-								"{{url}}"
-							],
-							"path": [
-								"api",
-								"auth",
-								"revoke"
-							]
-						}
-					},
-					"response": []
 				}
 			]
 		},
@@ -228,8 +228,7 @@
 						"header": [
 							{
 								"key": "X-CSRF-TOKEN",
-								"value": "CfDJ8OGA3mM8Sz1Clp4TjKSHqCuSj7bS0mM-CtdLEzBGOFXy3PMNLPwIMSPpnOR_Wl71YSzbvxT0aRF-XuvPESzrsZlfu-ShOiCXPasuaOo9GrHbt7zd1kiCO9PZkoqlky5C5xAJqDAxorEZ7lT28zff9AA",
-								"type": "text"
+								"value": "CfDJ8OGA3mM8Sz1Clp4TjKSHqCszImVuO2jbmwIW_QdhVmVTY8AMKUFBFMyeAqeS8s1EII808uSgeneBkQg_wowp3ZPqtQ9v6sBZdFg08op2YJNhnzQya4BlYGug70h40yVru5bgl_7o8D296I80Syt5alk"
 							}
 						],
 						"body": {
@@ -331,7 +330,7 @@
 							]
 						},
 						"url": {
-							"raw": "{{url}}/api/account/reset-password/eyJpdiI6IldJR0Y5S2hQWGdPTDd5Z0w4QTgyMEE9PSIsInZhbHVlIjoiUmY2L2VYMjJ3SWFpdFpwTkRpbkx5d2ZoWHpZcnVIWlZHN1Z1bzNFeU1OSC8yay8wYzlzTm5IWUZqcTRKQ1plTmlabU02QzAyQS9kd2ovZnlxS0JLQ21YVVBHRWs4aDdXUklheGxLU3F3bjd6bWROR2VuV0Q1NHYwNVlJQmUwUGNjcTZ1amplS1N0SUpOeVUvOW5QVzZETjJxSjVFMTVmSkp1a3c2Ym1YWkIxbVhuSEFub01wbXhIS1hvUlV1UzhwMmlPN1hvYkQraWZ1QUpiejIzTU91Zz09IiwibWFjIjoiNjVjNGIzZjIwMmNkNjY5ZWM2NTc2MGJmNWE4NzIxNWI0OWQ1MTYwZTllNzE3MTAzZTJlZmNkNTE4ZTUwMjUwMiJ9",
+							"raw": "{{url}}/api/account/reset-password/eyJpdiI6IlZYQk9WVkdHNTVIU3E2aDBuc1JZVFE9PSIsInZhbHVlIjoid1lmMHhaQWM2NkpXQ284TytmdHVGaTB1cVpscmRLQ0ZzRmRWblpzVmdJYzJ3L3lHeWxrWnBjWXY2U2dmMERxVWtLUW43bnJsWTBCa0srVlpRdDVLK0t2aDJtcUZKRkZxWjhPUERwTjBjYUtpOE8vaWx1Y25yK2puOUFLMU1NMnF2WDh0bmVoOWx1WkxDSkwzRWV1SEpTZzM1blFmSHhVNkI1ZVV6MW45VVdSQTI4NlZCQ2NPalZIdnpXaUpXaTZRNFJOV1dxcTdKZU12WTk3dmsycEhaZz09IiwibWFjIjoiODJkNTQ4N2U2ZmIxMjNjZTg4NmJjNDZlYWQ4MTUzZjYzYTJkNjI2YjQ2YmNjZGU2NTJmOTEwNTkwZDU4ZDI3ZiJ9",
 							"host": [
 								"{{url}}"
 							],
@@ -339,7 +338,7 @@
 								"api",
 								"account",
 								"reset-password",
-								"eyJpdiI6IldJR0Y5S2hQWGdPTDd5Z0w4QTgyMEE9PSIsInZhbHVlIjoiUmY2L2VYMjJ3SWFpdFpwTkRpbkx5d2ZoWHpZcnVIWlZHN1Z1bzNFeU1OSC8yay8wYzlzTm5IWUZqcTRKQ1plTmlabU02QzAyQS9kd2ovZnlxS0JLQ21YVVBHRWs4aDdXUklheGxLU3F3bjd6bWROR2VuV0Q1NHYwNVlJQmUwUGNjcTZ1amplS1N0SUpOeVUvOW5QVzZETjJxSjVFMTVmSkp1a3c2Ym1YWkIxbVhuSEFub01wbXhIS1hvUlV1UzhwMmlPN1hvYkQraWZ1QUpiejIzTU91Zz09IiwibWFjIjoiNjVjNGIzZjIwMmNkNjY5ZWM2NTc2MGJmNWE4NzIxNWI0OWQ1MTYwZTllNzE3MTAzZTJlZmNkNTE4ZTUwMjUwMiJ9"
+								"eyJpdiI6IlZYQk9WVkdHNTVIU3E2aDBuc1JZVFE9PSIsInZhbHVlIjoid1lmMHhaQWM2NkpXQ284TytmdHVGaTB1cVpscmRLQ0ZzRmRWblpzVmdJYzJ3L3lHeWxrWnBjWXY2U2dmMERxVWtLUW43bnJsWTBCa0srVlpRdDVLK0t2aDJtcUZKRkZxWjhPUERwTjBjYUtpOE8vaWx1Y25yK2puOUFLMU1NMnF2WDh0bmVoOWx1WkxDSkwzRWV1SEpTZzM1blFmSHhVNkI1ZVV6MW45VVdSQTI4NlZCQ2NPalZIdnpXaUpXaTZRNFJOV1dxcTdKZU12WTk3dmsycEhaZz09IiwibWFjIjoiODJkNTQ4N2U2ZmIxMjNjZTg4NmJjNDZlYWQ4MTUzZjYzYTJkNjI2YjQ2YmNjZGU2NTJmOTEwNTkwZDU4ZDI3ZiJ9"
 							]
 						}
 					},
@@ -366,7 +365,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{url}}/api/um/list?keyword=admin",
+							"raw": "{{url}}/api/um/list?keyword=tha",
 							"host": [
 								"{{url}}"
 							],
@@ -378,7 +377,7 @@
 							"query": [
 								{
 									"key": "keyword",
-									"value": "admin"
+									"value": "tha"
 								}
 							]
 						}
@@ -401,23 +400,54 @@
 						"method": "PUT",
 						"header": [],
 						"body": {
-							"mode": "raw",
-							"raw": "{\r\n    \"firstName\": \"Thanatmet\",\r\n    \"lastName\": \"Thanarattanan\",\r\n    \"nickName\": \"Billy\",\r\n    \"birthDate\": \"1992-07-04\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "firstName",
+									"value": "Thanatmet",
+									"type": "text"
+								},
+								{
+									"key": "lastName",
+									"value": "Thanarattanan",
+									"type": "text"
+								},
+								{
+									"key": "nickName",
+									"value": "Billy",
+									"type": "text"
+								},
+								{
+									"key": "birthDate",
+									"value": "1992-07-04",
+									"type": "text"
+								},
+								{
+									"key": "phoneNumber",
+									"value": "0904990500",
+									"type": "text"
+								},
+								{
+									"key": "activated",
+									"value": "true",
+									"type": "text"
+								},
+								{
+									"key": "role",
+									"value": "Admin",
+									"type": "text"
 								}
-							}
+							]
 						},
 						"url": {
-							"raw": "{{url}}/api/um/{id}/update",
+							"raw": "{{url}}/api/um/admin@pi.financial/update",
 							"host": [
 								"{{url}}"
 							],
 							"path": [
 								"api",
 								"um",
-								"{id}",
+								"admin@pi.financial",
 								"update"
 							]
 						}

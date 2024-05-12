@@ -32,3 +32,4 @@ C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.DAL\obj\Debug\net8.0\refint\PI.Quiz
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.DAL\obj\Debug\net8.0\PI.Quiz.DAL.pdb
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.DAL\obj\Debug\net8.0\PI.Quiz.DAL.genruntimeconfig.cache
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.DAL\obj\Debug\net8.0\ref\PI.Quiz.DAL.dll
+C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.DAL\obj\Debug\net8.0\PI.Quiz.DAL.sourcelink.json

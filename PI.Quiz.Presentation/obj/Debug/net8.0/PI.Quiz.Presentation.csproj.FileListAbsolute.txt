@@ -176,3 +176,4 @@ C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Presentation\bin\Debug\net8.0\BCryp
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Presentation\obj\Debug\net8.0\PI.Quiz.Presentation.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Presentation\bin\Debug\net8.0\Postman\PI.Quiz.Development.postman_environment.json
 C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Presentation\bin\Debug\net8.0\Postman\PI.Quiz.postman_collection.json
+C:\Users\006006\source\repos\PI.Quiz\PI.Quiz.Presentation\obj\Debug\net8.0\PI.Quiz.Presentation.sourcelink.json
