@@ -84,7 +84,7 @@ P4 > dotnet publish --configuration Release /p:EnvironmentName=Uat
 P5 > dotnet publish --configuration Release /p:EnvironmentName=Production
 ```
 #### หมายเหตุ: 
-เลือกรูปแบบ P1-P5 อย่างใดอย่างหนึ่ง โดยการรันแบบ P1 จะได้ Environment Default เป็น Production และ P2 เป็นการ Deploy บน IIS ของเครื่องนักพัฒนาเอง
+เลือกรูปแบบ P1-P5 อย่างใดอย่างหนึ่ง โดยการรันแบบ P1 จะได้ Environment Default เป็น Production
 
 ## Case Cannot Listening on Port 7012
 * ทำการ Activate Certification อีกรอบด้วยคำสั่งล่าง
