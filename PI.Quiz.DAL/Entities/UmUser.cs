@@ -1,6 +1,4 @@
-﻿using System.Collections.ObjectModel;
-
-namespace PI.Quiz.DAL.Entities
+﻿namespace PI.Quiz.DAL.Entities
 {
     public class UmUser
     {

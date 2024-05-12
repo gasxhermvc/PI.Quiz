@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using PI.Quiz.Engine.Extensions;
-using NUnit.Framework;
+﻿using PI.Quiz.Engine.Extensions;
 
 namespace PI.Quiz.UnitTest.Extensions
 {

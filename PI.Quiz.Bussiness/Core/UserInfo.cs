@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace PI.Quiz.Bussiness.Core
+﻿namespace PI.Quiz.Bussiness.Core
 {
     public class UserInfo
     {

@@ -13,8 +13,6 @@ using Microsoft.EntityFrameworkCore;
 using PI.Quiz.Engine.Security.Crypto;
 using PI.Quiz.Engine.Authentication.Jwt;
 using PI.Quiz.Bussiness.Core;
-using System.Net;
-using Newtonsoft.Json;
 using PI.Quiz.Presentation.Security.Middlewares.Excpetion;
 using PI.Quiz.Presentation.Security.Middlewares.Authorization;
 using Microsoft.AspNetCore.Authorization;

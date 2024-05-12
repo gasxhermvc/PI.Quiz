@@ -1,6 +1,4 @@
-﻿using System.Data.Entity;
-
-namespace PI.Quiz.DAL.Entities
+﻿namespace PI.Quiz.DAL.Entities
 {
     public class UmToken
     {

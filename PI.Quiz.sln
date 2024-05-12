@@ -24,10 +24,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.Engine", "PI.Quiz.E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5F9043B4-8EF2-4392-A830-F1C6CC26B307}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PI.Quiz.UnitTest", "PI.Quiz.UnitTest\PI.Quiz.UnitTest.csproj", "{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PI.Quiz.UnitTest", "PI.Quiz.UnitTest\PI.Quiz.UnitTest.csproj", "{0A11CA8E-DC72-4F87-97E1-E97E1AA26A78}"
 	ProjectSection(ProjectDependencies) = postProject
 		{3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F} = {3DA54BB7-96D4-4CF6-9B3C-D68AF28DF16F}
 	EndProjectSection

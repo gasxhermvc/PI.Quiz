@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PI.Quiz.Bussiness.Core;
 using PI.Quiz.Bussiness.Models.Requests.UserManagement;
 using PI.Quiz.DAL.Entities;

@@ -1,7 +1,4 @@
-﻿using BCrypt.Net;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using PI.Quiz.Bussiness.Core;
 using PI.Quiz.Bussiness.Models.Requests.Authen;
 using PI.Quiz.DAL.Entities;

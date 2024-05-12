@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Primitives;
 using PI.Quiz.DAL.Entities;
 using PI.Quiz.Engine.Authentication.Jwt;
 using System.Security.Claims;

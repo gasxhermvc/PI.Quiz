@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Diagnostics;
-using Newtonsoft.Json;
-using System.Net;
+﻿using Newtonsoft.Json;
 using System.Text;
 
 namespace PI.Quiz.Presentation.Security.Middlewares.Excpetion
