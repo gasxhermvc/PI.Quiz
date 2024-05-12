@@ -12,7 +12,8 @@ Project สำหรับทดสอบบริษัท PI Securities By Tha
 1. NET CORE 8.0
 2. SQLite Database
 3. NLog
-4. Postman
+4. NUnit
+5. Postman
 
 ## Strcuture Details
 1. PI.Quiz.Presentation เป็นชั้น Layer บนสุดสำหรับเป็นชั้นติดต่อประสานกับ Client
