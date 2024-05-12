@@ -35,19 +35,27 @@ Project สำหรับทดสอบบริษัท PI Securities By Tha
 
 ### Install migration
 - สำหรับ การติดตั้ง Migrations ให้กับ Application โดยขั้นตอนนี้จะต้องเช็คไฟล์ app.db ในระดับ Root Application ด้วยหากมีแล้วให้เช็คต่อว่าในไฟล์มีการ Migrations เรียบร้อยแล้วหรือไม่ เพื่อไม่ให้เกิด Error หรือข้อมูลซ้ำ สามารถ Remove-migration ก่อนหนึ่งรอบได้
+```cmd 
 Add-Migration PI_QUIZ
+`
 
 ### Create seed data
 - สำหรับกรณีต้องการ Mockup data เพิ่มเติมต่อจากเดิมสามารถเพิ่มผ่านการ Seed Db ได้ จากนั้นให้รันคำสั่ง Update-Database
+```cmd 
 Add-Migration SeedInitialData
+`
 
 ### Update database
 - สำหรับกรณีต้องการอัปเดตฐานข้อมูลไม่ว่าจะเป็นการ Add-Migration หรือ Seed Db สามารถรันอัปเดตได้เสมอ
+```cmd 
 Update-Database
+`
 
 ### Remove migration
 - สำหรับถอนการติดตั้ง Table ต่าง ๆ ที่เรามีการรัน Update-Database เพื่อติดตั้งตารางฐานข้อมูลใหม่อีกครั้ง
-Remove-Migration -f
+```cmd 
+Remove-Migration -f 
+`
 
 ## Unit Test & E2E Test
 - การทดสอบ Unit Test จะใช้งาน NUnit.Framework
